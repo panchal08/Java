@@ -1,0 +1,166 @@
+/*--------------------------------------------------------------
+# Exam-Sidebar
+--------------------------------------------------------------*/
+#wrapper {
+    overflow-x: hidden;
+  }
+
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -20rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+  }
+
+  #sidebar-wrapper .sidebar-heading,
+  #page-content-wrapper .nav-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 28px;
+    font-weight: 700px;
+    font-family: Aharoni;
+    color: #000;
+  }
+
+  #sidebar-wrapper .sidebar-heading span,
+  #page-content-wrapper .nav-heading span {
+    color: #7cc576;
+    margin-left: 5px;
+  }
+
+  #sidebar-wrapper .list-group {
+    width: 19rem;
+  }
+
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+
+  #wrapper .icon-box .logout a {
+    width: 200px;
+    text-align: center;
+    margin-top: 5%;
+    background: #7cc576;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.5%;
+  }
+
+  #wrapper .icon-box .logout a:hover {
+    color: #7cc576;
+    border: solid #7cc576 2px;
+    background: #fff;
+  }
+
+  #question2,
+  #question3,
+  #question4,
+  #question5,
+  #question6,
+  #question7,
+  #question8,
+  #question9,
+  #question10,
+  #question11,
+  #question12,
+  #question13,
+  #question14,
+  #question15,
+  #question16,
+  #question17,
+  #question18,
+  #question19,
+  #question20,
+  #question21,
+  #question22,
+  #question23,
+  #question24,
+  #question25 {
+    display: none;
+  }
+
+  .exam .btn {
+    border: solid #000 1px;
+    border-radius: 40px;
+    outline: none;
+    height: 40px;
+    width: 40px;
+    background-color: #f1f1f1;
+    font-size: 18px;
+    margin: 5px;
+  }
+  
+  .exam .visited {
+    background-color: rgb(182, 54, 31);
+    color: white;
+  }
+  
+  .exam .active, .btn:hover {
+    background-color: #7cc576;
+    color: white;
+    border: 0px solid;
+  }
+
+  .exam h4 {
+    font-size: 18px;
+    font-family: Aharoni;
+    color: rgba(8, 8, 8, 0.651);
+  }
+
+  .notation span {
+    width: 25px;
+    height: 25px;
+    border: #000 solid 1px;
+    border-radius: 50px;
+    display: inline-block;
+    position: absolute;
+  }
+  
+  .notation h5 {
+      font-size: 15px;
+      display: inline-block;
+      position: relative;
+      margin-left: 30px;
+  }
+
+  .user {
+    background: rgba(0, 0, 0, 0.151);
+  }
+
+  .user i {
+    font-size: 30px;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.589);
+  }
+  
+  .user strong {
+    font-size: 20px;
+    position: relative;
+    margin-left: 12%;
+    color: rgba(0, 0, 0, 0.589);
+  }
+
+  .test form .question-area {
+    width: 100%;
+    height: 55vh;
+  }

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Learning Point - Admin</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/LearningPointLogo.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/Admin.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Learning<span>Point</span></div>
+      <div class="list-group list-group-flush icon-box mt-4">
+        <div id="active-btn">
+
+          <div class="menu btns active">
+            <i class="bx bx-bar-chart-alt-2"></i>
+            <a href="#" onclick="myFunction(`1`)">Dashboard</a>
+          </div>
+          <div class="menu btns">
+            <i class="bx bx-book-bookmark"></i>
+            <a href="#" onclick="myFunction(`2`)">Notes</a>
+          </div>
+          <div class="menu btns">
+            <i class="bx bx-list-check"></i>
+            <a href="#" onclick="myFunction(`3`)">Mock Test</a>
+          </div>
+          <div class="menu btns">
+            <i class="bx bx-spreadsheet"></i>
+            <a href="#" onclick="myFunction(`4`)">Previous Paper</a>
+          </div>
+          <div class="menu btns">
+            <i class="bx bx-mail-send "></i>
+            <a href="#" onclick="myFunction(`5`)">Message</a>
+          </div>
+          <div class="menu btns">
+            <i class="bx bx-user-check"></i>
+            <a href="#" onclick="myFunction(`6`)">Subscribers</a>
+          </div>
+          <div class="menu btns">
+            <i class="bx bx-id-card"></i>
+            <a href="#" onclick="myFunction(`7`)">Contact Details</a>
+          </div>
+          <div class="logout ml-3">
+            <a href="#">Log-Out</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="page-content-wrapper" class="admin">
+
+      <nav class="navbar navbar-expand-lg bg-light navbar-light navbar-toggler d-md-none fixed-top">
+        <button id="menu-toggle" class="btn btn-outline-success text-success">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="nav-heading">Learning<span>Point</span></div>
+      </nav>
+
+      <div class="title">
+        <img src="assets/img/hero-bg.jpg" class="img-fluid" alt="Responsive image">
+      </div>
+
+      <div class="container-fluid">
+
+        <div id="dashboard">
+
+          <h1 class=" mt-md-0 mt-5">Dashboard</h1>
+          <h3 class="d-none d-lg-block"><strong>Login : </strong>Shubham Panchal</h3>
+
+          <div class=" container">
+            <div class=" row box-area overflow-auto ml-auto mr-auto">
+              <div class="col">
+                <div id="curve_chart" class="chart m-auto"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="notes">
+
+          <h1 class=" mt-md-0 mt-5">Notes</h1>
+          <h3 class="d-none d-lg-block"><strong>Login : </strong>Shubham Panchal</h3>
+
+          
+          <div class=" container">
+            <div class="box-area overflow-auto ml-auto mr-auto">
+
+              <form class="p-2 p-lg-5" action="forms/" method="post" data-aos="fade-left">
+                <div class="form-group ">
+                  <input type="text" class="form-control" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFileLangHTML">
+                    <label class="custom-file-label" for="customFileLangHTML" data-browse="Browse">Choose Notes</label>
+                    <small class="form-text text-muted">File should be less then 1MB.</small>
+                  </div>
+                </div>
+                <button type="submit">Add Notes</button>
+              </form>
+    
+              <table class="table p-5">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Algorithms</td>
+                      <td><a href="#" class="float-right">Delete</a></td>
+                    </tr>
+                </tbody>
+              </table>
+              
+            </div>
+          </div>
+
+        </div>
+
+        <div id="mockTest">
+
+          <h1 class=" mt-md-0 mt-5">Mock Test</h1>
+          <h3 class="d-none d-lg-block"><strong>Login : </strong>Shubham Panchal</h3>
+
+          <div class=" container">
+            <div class="box-area overflow-auto ml-auto mr-auto">
+
+              <form class="p-2 p-lg-4" action="forms/" method="post">
+                <div class="form-group">
+                  <label>Question 1</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-row">
+
+                  <div class="form-group col-md-6">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <input type="radio" name="question-1">
+                        </div>
+                      </div>
+                    <input type="text" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <input type="radio" name="question-1">
+                        </div>
+                      </div>
+                    <input type="text" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <input type="radio" name="question-1">
+                        </div>
+                      </div>
+                    <input type="text" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <input type="radio" name="question-1">
+                        </div>
+                      </div>
+                    <input type="text" class="form-control">
+                    </div>
+                  </div>
+
+                </div>
+                <button type="submit">Upload Test</button>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div id="previPaper">
+
+          <h1 class=" mt-md-0 mt-5">Previous Paper</h1>
+          <h3 class="d-none d-lg-block"><strong>Login : </strong>Shubham Panchal</h3>
+
+          <div class=" container">
+            <div class="box-area ml-auto mr-auto">
+
+              <form class="p-2 p-lg-5" action="forms/" method="post">
+                <div class="form-group ">
+                  <input type="text" class="form-control" placeholder="Paper Name">
+                </div>
+                <div class="form-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFileLangHTML">
+                    <label class="custom-file-label" for="customFileLangHTML" data-browse="Browse">Choose Paper</label>
+                    <small class="form-text text-muted">File should be less then 1MB.</small>
+                  </div>
+                </div>
+                <button type="submit">Add Paper</button>
+              </form>
+
+              <table class="table p-5">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Paper Name</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>GATE-2020 Paper</td>
+                      <td>
+                        <a href="#" class="float-right">Delete</a>
+                        <a href="#" class="float-right mr-2 view">View</a>
+                      </td>
+                    </tr>
+                </tbody>
+              </table>
+              
+            </div>
+          </div>
+
+        </div>
+
+        <div id="message">
+
+          <h1 class=" mt-md-0 mt-5">Message</h1>
+          <h3 class="d-none d-lg-block"><strong>Login : </strong>Shubham Panchal</h3>
+
+          <div class=" container">
+            <div class="row box-area overflow-auto ml-auto mr-auto">
+
+              <div class="col-lg-5 mt-2">
+                <h5><strong>Name :</strong>Shubham Panchal</h5>
+                <h5><strong>Email :</strong>abc@gmail.com</h5>
+                <h5><strong>Subject :</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                  dolor.</h5>
+              </div>
+
+              <div class="col-lg-7 col mt-2">
+                <div class="form-group">
+                  <h5><strong>Message</strong></h5>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>hello sir</textarea>
+                </div>
+                <a href="#" class="float-right mb-1">Delete</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div id="subscribers">
+
+          <h1 class=" mt-md-0 mt-5">Subscribers</h1>
+          <h3 class="d-none d-lg-block"><strong>Login : </strong>Shubham Panchal</h3>
+
+          <div class=" container">
+            <div class="row box-area overflow-auto ml-auto mr-auto">
+              <div class="col">
+
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>mr.panchal2308@gmail.com</td>
+                      <td><a href="#" class="float-right">Unsubscribe</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="contactDetail">
+
+          <h1 class=" mt-md-0 mt-5">Contact Details</h1>
+          <h3 class="d-none d-lg-block"><strong>Login : </strong>Shubham Panchal</h3>
+
+          <div class=" container">
+            <div class="box-area overflow-auto ml-auto mr-auto">
+              <form class="p-2 p-lg-4" action="forms/" method="post">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Location</label>
+                    <input type="email" class="form-control">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Email</label>
+                    <input type="password" class="form-control">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Contact No.</label>
+                    <input type="password" class="form-control">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Twitter-Path</label>
+                    <input type="email" class="form-control">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Facebook-Path</label>
+                    <input type="password" class="form-control">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Instagram-Path</label>
+                    <input type="password" class="form-control">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Skype-Path</label>
+                    <input type="password" class="form-control">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Linkedin-Path</label>
+                    <input type="password" class="form-control">
+                  </div>
+                </div>
+                <button type="submit">Set</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+
+    //Menu Toggle Script
+
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+
+    var header = document.getElementById("active-btn");
+    var btns = header.getElementsByClassName("btns");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+
+
+    function myFunction(y) {
+      var db = document.getElementById("dashboard");
+      var nt = document.getElementById("notes");
+      var mt = document.getElementById("mockTest");
+      var pp = document.getElementById("previPaper");
+      var ms = document.getElementById("message");
+      var sc = document.getElementById("subscribers");
+      var cd = document.getElementById("contactDetail");
+      if (`1` === y) {
+        db.style.display = "block";
+        nt.style.display = "none";
+        mt.style.display = "none";
+        pp.style.display = "none";
+        ms.style.display = "none";
+        sc.style.display = "none";
+        cd.style.display = "none";
+      } else if (`2` === y) {
+        db.style.display = "none";
+        nt.style.display = "block";
+        mt.style.display = "none";
+        pp.style.display = "none";
+        ms.style.display = "none";
+        sc.style.display = "none";
+        cd.style.display = "none";
+      } else if (`3` === y) {
+        db.style.display = "none";
+        nt.style.display = "none";
+        mt.style.display = "block";
+        pp.style.display = "none";
+        ms.style.display = "none";
+        sc.style.display = "none";
+        cd.style.display = "none";
+      } else if (`4` === y) {
+        db.style.display = "none";
+        nt.style.display = "none";
+        mt.style.display = "none";
+        pp.style.display = "block";
+        ms.style.display = "none";
+        sc.style.display = "none";
+        cd.style.display = "none";
+      } else if (`5` === y) {
+        db.style.display = "none";
+        nt.style.display = "none";
+        mt.style.display = "none";
+        pp.style.display = "none";
+        ms.style.display = "block";
+        sc.style.display = "none";
+        cd.style.display = "none";
+      } else if (`6` === y) {
+        db.style.display = "none";
+        nt.style.display = "none";
+        mt.style.display = "none";
+        pp.style.display = "none";
+        ms.style.display = "none";
+        sc.style.display = "block";
+        cd.style.display = "none";
+      } else if (`7` === y) {
+        db.style.display = "none";
+        nt.style.display = "none";
+        mt.style.display = "none";
+        pp.style.display = "none";
+        ms.style.display = "none";
+        sc.style.display = "none";
+        cd.style.display = "block";
+      }
+    }
+  </script>
+
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Year', 'View', 'Subscribers'],
+      ['',  10,      20],
+      ['',  150,      70],
+      ['',  420,       100],
+      ['',  640,      340],
+      ['',  780,      510]
+    ]);
+
+    var options = {
+      title: 'Performance',
+      curveType: 'function',
+      legend: { position: 'bottom' }
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+    chart.draw(data, options);
+  }
+</script>
+</body>
+
+</html>

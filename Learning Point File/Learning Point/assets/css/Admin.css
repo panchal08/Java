@@ -1,0 +1,338 @@
+/*--------------------------------------------------------------
+# Admin-Sidebar
+--------------------------------------------------------------*/
+#wrapper {
+    overflow-x: hidden;
+  }
+
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+  }
+
+  #sidebar-wrapper .sidebar-heading,
+  #page-content-wrapper .nav-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 28px;
+    font-weight: 700px;
+    font-family: Aharoni;
+    color: #000;
+  }
+
+  #sidebar-wrapper .sidebar-heading span,
+  #page-content-wrapper .nav-heading span {
+    color: #7cc576;
+    margin-left: 5px;
+  }
+
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+
+  #wrapper .icon-box {
+    overflow: hidden;
+  }
+
+  #wrapper .icon-box .menu {
+    padding: 1%;
+    align-items: center;
+    height: 60px;
+    overflow: hidden;
+    text-align: center;
+    margin-left: -70%;
+  }
+
+  #wrapper .icon-box .menu:hover,
+  .active {
+    background: #fff;
+  }
+
+  #wrapper .icon-box i {
+    font-size: 28px;
+    color: #7cc576;
+    padding: 3%;
+    position: relative;
+  }
+
+  #wrapper .icon-box a {
+    color: rgba(14, 13, 13, 0.904);
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Comic Sans MS";
+    margin-top: 1%;
+    position: absolute;
+  }
+
+  #wrapper .icon-box .logout a {
+    width: 200px;
+    text-align: center;
+    margin-top: 5%;
+    background: #7cc576;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.5%;
+  }
+
+  #wrapper .icon-box .logout a:hover {
+    color: #7cc576;
+    border: solid #7cc576 2px;
+    background: #fff;
+  }
+
+  #notes,
+  #mockTest,
+  #previPaper,
+  #message,
+  #subscribers,
+  #contactDetail {
+    display: none;
+  }
+
+/*--------------------------------------------------------------
+# Admin-Titlebar
+--------------------------------------------------------------*/
+  .admin .title {
+    height: 60vh;
+    overflow: hidden;
+  }
+
+  .admin .title img {
+    width: 100%;
+    position: relative;
+  }
+
+  .admin h1 {
+    position: absolute;
+    color: #fff;
+    top: 10%;
+    margin-left: 5%;
+    font-size: 30px;
+  }
+
+  .admin h3 {
+    position: absolute;
+    color: #fff;
+    top: 11%;
+    margin-left: 50%;
+    font-size: 20px;
+  }
+
+  .admin .box-area {
+    background: #fff;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+    margin-top: -25%;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+  }
+
+/*--------------------------------------------------------------
+# Admin-Dashboard
+--------------------------------------------------------------*/
+#dashboard .chart {
+height: 90%;
+width: 80%;
+}
+
+/*--------------------------------------------------------------
+# Admin-Notes
+--------------------------------------------------------------*/
+  #notes form button {
+    width: 100%;
+    text-align: center;
+    background: #7cc576;
+    color: #fff;
+    border-radius: 3px;
+    border: solid #7cc576 2px;
+    padding: 0.5%;
+  }
+
+  #notes form button:hover {
+    color: #7cc576;
+    background: #fff;
+  }
+
+  #notes a {
+    text-align: center;
+    background: #e25050;
+    color: #fff;
+    border-radius: 3px;
+    padding: 3%;
+    border: solid #e25050 2px;
+  }
+
+  #notes a:hover {
+    color: #e25050;
+    background: #fff;      
+  }
+
+/*--------------------------------------------------------------
+# Admin-Mock Test
+--------------------------------------------------------------*/
+  #mockTest form button {
+    width: 100%;
+    text-align: center;
+    background: #7cc576;
+    color: #fff;
+    border-radius: 3px;
+    border: solid #7cc576 2px;
+    padding: 0.5%;
+  }
+
+  #mockTest form button:hover {
+    color: #7cc576;
+    background: #fff;
+  }
+
+/*--------------------------------------------------------------
+# Admin-Previous Paper
+--------------------------------------------------------------*/
+  #previPaper form button {
+    width: 100%;
+    text-align: center;
+    background: #7cc576;
+    color: #fff;
+    border-radius: 3px;
+    border: solid #7cc576 2px;
+    padding: 0.5%;
+  }
+
+  #previPaper form button:hover {
+    color: #7cc576;
+    background: #fff;
+  }
+
+  #previPaper a {
+    text-align: center;
+    background: #e25050;
+    color: #fff;
+    border-radius: 3px;
+    padding: 2%;
+    border: solid #e25050 2px;
+  }
+
+  #previPaper a:hover {
+    color: #e25050;
+    background: #fff;      
+  }
+
+  #previPaper .view {
+    text-align: center;
+    background: #7cc576;
+    color: #fff;
+    border-radius: 3px;
+    padding: 2%;
+    border: solid #7cc576 2px;
+  }
+
+  #previPaper .view:hover {
+    color: #7cc576;
+    background: #fff;
+  }
+/*--------------------------------------------------------------
+# Admin-Message
+--------------------------------------------------------------*/
+  #message h5 {
+    font-size: 16px;
+    color: #000;
+  }
+
+  #message a {
+    width: 200px;
+    text-align: center;
+    background: #e25050;
+    color: #fff;
+    border-radius: 3px;
+    padding: 0.5%;
+    border: solid #e25050 2px;
+    text-decoration: none;
+  }
+
+  #message a:hover {
+    color: #e25050;
+    background: #fff;      
+  }
+
+/*--------------------------------------------------------------
+# Admin-Subscribers
+--------------------------------------------------------------*/
+  #subscribers a {
+    text-align: center;
+    background: #e25050;
+    color: #fff;
+    border-radius: 3px;
+    padding: 2%;
+    border: solid #e25050 2px;
+  }
+
+  #subscribers a:hover {
+    color: #e25050;
+    background: #fff;      
+  }
+
+/*--------------------------------------------------------------
+# Admin-Contact Details
+--------------------------------------------------------------*/
+  #contactDetail form button {
+    width: 100%;
+    text-align: center;
+    background: #7cc576;
+    color: #fff;
+    margin-top: 2%;
+    border-radius: 3px;
+    border: solid #7cc576 2px;
+    padding: 0.5%;
+  }
+
+  #contactDetail form button:hover {
+    color: #7cc576;
+    background: #fff;
+  }
+  
+/*--------------------------------------------------------------
+# Admin-Login
+--------------------------------------------------------------*/
+  .login-area button {
+    width: 100%;
+    text-align: center;
+    background: #7cc576;
+    color: #fff;
+    margin-top: 2%;
+    border-radius: 3px;
+    border: solid #7cc576 2px;
+    padding: 0.5%;
+  }
+
+  .login-area button:hover {
+    color: #7cc576;
+    background: #fff;
+  }
