@@ -1,4 +1,4 @@
-ssimport java.util.Scanner;
+import java.util.Scanner;
 public class Fibonacci {
 	public static void fibo(int num) {
 		for(int i = 0, a = 0, b = 0, c = 1; i <= num; i++) {
